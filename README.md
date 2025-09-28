@@ -36,3 +36,15 @@ SourceAddress          : 192.168.1.107
 PingSucceeded          : True
 PingReplyDetails (RTT) : 0 ms
 TcpTestSucceeded       : False
+
+Removing the Test Block:
+
+PS C:\WINDOWS\system32> Remove-NetFirewallRule -DisplayName "Block TCP 4444"
+PS C:\WINDOWS\system32> Get-NetFirewallRule -DisplayName "Block TCP 4444"
+Get-NetFirewallRule : No MSFT_NetFirewallRule objects found with property 'DisplayName' equal to 'Block TCP 4444'.  Verify the value of the property and retry.
+At line:1 char:1
++ Get-NetFirewallRule -DisplayName "Block TCP 4444"
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Block TCP 4444:String) [Get-NetFirewallRule], CimJobException
+    + FullyQualifiedErrorId : CmdletizationQuery_NotFound_DisplayName,Get-NetFirewallRule
+
