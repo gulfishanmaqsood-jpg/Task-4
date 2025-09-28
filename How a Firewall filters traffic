@@ -1,0 +1,32 @@
+How a Firewall Filters Traffic
+
+Traffic Monitoring:
+The firewall watches all incoming and outgoing network traffic on your device or network.
+
+Rules and Policies:
+It uses a set of predefined rules (firewall rules) that specify what types of traffic are allowed or blocked. These rules are based on things like:
+
+IP addresses (source or destination)
+
+Ports (source or destination port numbers)
+
+Protocols (TCP, UDP, ICMP, etc.)
+
+Direction (inbound or outbound)
+
+Programs or services involved
+
+Decision Making:
+For each network packet, the firewall checks the rules in order and decides whether to:
+
+Allow the packet through (if it matches an “allow” rule)
+
+Block/Drop the packet (if it matches a “block” rule)
+
+Reject the packet (actively refuse connection)
+
+Enforcement:
+The firewall then either passes the allowed traffic on to the application/network or blocks the denied traffic from reaching it.
+
+Logging and Alerts:
+Many firewalls log blocked or suspicious traffic and can alert administrators about potential security issues
